@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bikes</title>
+    <meta name="keywords" content="html,css,javaScript" />
+    <meta name="description" content="Bikes" />
+    <meta name="author" content="" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+    <!-- Latest compiled and minified BOOTSTRAP CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+
+    <!-- Local CSS -->
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+
+    <!-- Font-awesome 5 cdn -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- start here -->
+    <section class="container">
+      <header>
+        <div>
+          <img src="./img/logo.png" alt="" />
+        </div>
+        <div class="navigation">
+          <nav>
+            <ul>
+              <li>HOME</li>
+              <li>BIKES</li>
+              <li>GEAR</li>
+              <li>PARTS</li>
+              <li>TIRES</li>
+              <li>SERVICE-INFO</li>
+              <li>CATALOGUES</li>
+              <li>CONTACT</li>
+            </ul>
+          </nav>
+        </div>
+        <div class="icon-bar">
+          <i class="fas fa-search"></i>
+          <i class="fas fa-shopping-bag"></i>
+        </div>
+      </header>
+      <section class="second">
+        <h1>Bikes</h1>
+      </section>
+      <section class="filters">
+        <div class="left">
+          <div class="top">
+            <h1>Filter by:</h1>
+            <button class="number-button" onclick="showAll()">
+              Show all <span id="totalCount">(0)</span>
+            </button>
+          </div>
+          <div class="mid">
+            <h2>Gender</h2>
+            <button class="number-button" onclick="filterByGender('MALE')">
+              Male <span id="maleCount">(0)</span>
+            </button>
+            <button class="number-button" onclick="filterByGender('FEMALE')">
+              Female <span id="femaleCount">(0)</span>
+            </button>
+          </div>
+          <div class="bottom">
+            <h2>Brand</h2>
+            <button
+              class="number-button"
+              onclick="filterByBrand('LE GRAND BIKES')"
+            >
+              LE GRAND BIKES <span id="leGrandCount">(0)</span>
+            </button>
+            <button class="number-button" onclick="filterByBrand('KROSS')">
+              KROSS <span id="krossCount">(0)</span>
+            </button>
+            <button class="number-button" onclick="filterByBrand('EXPLORER')">
+              EXPLORER <span id="explorerCount">(0)</span>
+            </button>
+            <button class="number-button" onclick="filterByBrand('VISITOR')">
+              VISITOR <span id="visitorCount">(0)</span>
+            </button>
+            <button class="number-button" onclick="filterByBrand('PONY')">
+              PONY <span id="ponyCount">(0)</span>
+            </button>
+            <button class="number-button" onclick="filterByBrand('FORCE')">
+              FORCE <span id="forceCount">(0)</span>
+            </button>
+            <button class="number-button" onclick="filterByBrand('E-BIKES')">
+              E-BIKES <span id="eBikesCount">(0)</span>
+            </button>
+            <button class="number-button" onclick="filterByBrand('IDEAL')">
+              IDEAL <span id="idealCount">(0)</span>
+            </button>
+          </div>
+        </div>
+        <div class="right">
+          <div class="product-container" id="productContainer"></div>
+        </div>
+      </section>
+      <footer>
+        <div class="footer-section">
+          <h2>Social share</h2>
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-linkedin"></i>
+        </div>
+        <div class="footer-section">
+          <h2>Event info</h2>
+          <p>Enter Now</p>
+          <p>Enter info</p>
+          <p>Course Maps</p>
+          <p>Race pack</p>
+          <p>Results</p>
+          <p>FAQs</p>
+          <p>Am I Registered</p>
+        </div>
+        <div class="footer-section">
+          <h2>Registration</h2>
+          <p>Volunteers</p>
+          <p>Gallery</p>
+          <p>Press</p>
+          <p>Results</p>
+          <p>Service Plus</p>
+          <p>Contacts</p>
+        </div>
+        <div class="footer-section">
+          <h2>Schedule</h2>
+          <p>Gallery</p>
+          <p>About</p>
+          <p>Videos</p>
+          <p>Results</p>
+          <p>FAQs</p>
+          <p>Results</p>
+          <p>Volunteers</p>
+        </div>
+      </footer>
+    </section>
+
+    <!-- jQuery library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
